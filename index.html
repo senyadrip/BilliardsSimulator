@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Menu</title>
+        <style type="text/css">
+            .text {
+                text-align: center;
+                color: whitesmoke;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            body {
+                background-color: rgb(72, 25, 25);
+            }
+            .box {
+                outline-width: 0.5px;
+                outline-color: white;
+                outline-style: solid;
+                align-items: center;
+                margin: auto;
+                width: 500px;
+                padding: 20px;
+                margin-top: 50px;
+            }
+            .test {
+                margin: auto;
+                margin-bottom: 30px;
+                display: block;
+                font-size: 20px;
+                background-color: rgb(72, 25, 25);
+                color: white;
+                outline-color: white;
+                outline-style: solid;
+                outline-width: 1px;
+                padding: 5px;
+                text-align: center;
+            }
+            .button {
+                display: block;
+                margin: auto;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="text">Pool Simulator CIS2750</h1>
+        <hr/>
+        <div class="box">
+        <h2 class="text">Enter Player Names To Get Started:</h2>
+        <hr/>
+        <form action="/start" method="post">
+            <h3 class="text">Player 1 Name</h3>
+            <input class="test" type="text" name="player1name" size="30">
+            <h3 class="text">Player 2 Name</h3>
+            <input class="test" type="text" name="player2name" size="30">
+            <input class="button" type="submit" value="Play"/>
+        </form>
+        </div> 
+    </body>
+</html>
